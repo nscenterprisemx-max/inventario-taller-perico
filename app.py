@@ -14,7 +14,7 @@ def get_groq_key():
     except:
         return os.getenv('GROQ_API_KEY')
 
-st.set_page_config(page_title="Bodega — Taller de Perico", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Inventario de Taller", layout="wide", initial_sidebar_state="expanded")
 
 # --- ESTILOS ---
 st.markdown("""
@@ -238,7 +238,7 @@ if not st.session_state.logged_in:
         <div style='text-align:center; padding: 40px 0 20px 0;'>
             <div style='font-family: Barlow Condensed, sans-serif; font-size: 3rem;
                         font-weight: 700; color: #58a6ff; letter-spacing: 3px;'>
-                TALLER DE PERICO
+                INVENTARIO DE TALLER
             </div>
             <div style='color: #8b949e; letter-spacing: 4px; font-size: 12px; margin-top: 4px;'>
                 CONTROL DE BODEGA
