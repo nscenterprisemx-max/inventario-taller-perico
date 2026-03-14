@@ -272,7 +272,7 @@ st.sidebar.markdown("""
 <div style='padding: 10px 0 6px 0;'>
     <div style='font-family: Barlow Condensed, sans-serif; font-size: 1.5rem;
                 font-weight: 700; color: #58a6ff; letter-spacing: 2px;'>
-        TALLER DE PERICO
+       INVENTARIO DE TALLER
     </div>
     <div style='color: #8b949e; font-size: 11px; letter-spacing: 3px;'>BODEGA</div>
     <div style='border-bottom: 2px solid #1f6feb; margin-top: 10px;'></div>
