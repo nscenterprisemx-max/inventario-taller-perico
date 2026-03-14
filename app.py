@@ -141,6 +141,43 @@ hr { border-color: #21262d; }
 
 /* Ocultar botón de chat flotante y menú hamburguesa */
 #MainMenu, footer, [data-testid="stChatFloatingInputContainer"] { display: none !important; }
+
+/* --- RESPONSIVE MÓVIL --- */
+@media (max-width: 768px) {
+    .header-strip { padding: 12px 14px; margin-bottom: 12px; }
+    .header-strip h1 { font-size: 1.3rem !important; }
+    .header-strip span { font-size: 10px; letter-spacing: 1px; }
+
+    [data-testid="stMetricValue"] { font-size: 1.4rem !important; }
+    [data-testid="stMetricLabel"] { font-size: 11px !important; }
+
+    /* Columnas apiladas en móvil */
+    [data-testid="column"] { min-width: 100% !important; }
+
+    /* Tabs más compactos */
+    .stTabs [data-baseweb="tab"] {
+        font-size: 12px;
+        padding: 6px 10px;
+        letter-spacing: 0.5px;
+    }
+
+    /* Botones full width */
+    .stButton > button { width: 100%; font-size: 14px; padding: 10px 12px; }
+
+    /* Sidebar más angosta */
+    section[data-testid="stSidebar"] { min-width: 200px !important; }
+
+    /* Dataframe scroll horizontal */
+    .stDataFrame { overflow-x: auto; }
+
+    /* Inputs más grandes para touch */
+    .stTextInput > div > div > input,
+    .stNumberInput > div > div > input,
+    .stSelectbox > div > div {
+        font-size: 16px !important;
+        padding: 10px !important;
+    }
+}
 </style>
 """, unsafe_allow_html=True)
 
