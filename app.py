@@ -558,7 +558,7 @@ Si no encuentras la información exacta, dilo claramente. Sé conciso."""
             for m in st.session_state.chat_history[-6:]:
                 messages.append({'role': m['role'], 'content': m['content']})
             response = client.chat.completions.create(
-                model='llama3-70b-8192',
+                model='llama-3.3-70b-versatile',
                 messages=messages,
                 temperature=0.2,
                 max_tokens=512
